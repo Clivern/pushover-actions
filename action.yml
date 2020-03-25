@@ -1,5 +1,5 @@
 # action.yml
-name: 'krypton-actions'
+name: 'pushover-actions'
 description: 'Open Source Workflow Automation'
 branding:
   icon: 'package'
