@@ -1,6 +1,6 @@
 # action.yml
 name: 'pushover-actions'
-description: 'Open Source Workflow Automation'
+description: 'Pushover A Notifications for Github Repository Changes'
 branding:
   icon: 'package'
   color: 'red'

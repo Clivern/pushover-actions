@@ -9,7 +9,7 @@ LABEL "repository"="https://github.com/Clivern/pushover-actions"
 LABEL "homepage"="http://github.com/clivern"
 LABEL "maintainer"="Clivern <hello@clivern.com>"
 
-ARG PO_VERSION=0.0.2
+ARG PO_VERSION=0.0.3
 
 ENV GO111MODULE=on
 
@@ -24,4 +24,10 @@ RUN curl -sL https://github.com/Clivern/pushover-actions/releases/download/${PO_
 RUN rm LICENSE
 RUN rm README.md
 
-ENTRYPOINT ["./pushover-actions"]
+COPY entrypoint.sh /app
+
+RUN chmod +x /app/entrypoint.sh
+
+RUN chmod +x /app/pushover-actions
+
+ENTRYPOINT ["/app/entrypoint.sh"]
