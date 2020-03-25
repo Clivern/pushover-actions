@@ -14,7 +14,9 @@
 
 #### Pushover as a Github Action:
 
-To install pushover github action, add the following to your `workflow.yml`.
+1. First create [pushover application](https://pushover.net/) and get a token and user key.
+
+2. Create github action by adding the following to your `workflow.yml`.
 
 ```yml
 name: workflow_name
@@ -35,6 +37,29 @@ jobs:
           PUSHOVER_USER: ${{ secrets.PUSHOVER_USER }}
 ```
 
+3. Add pushover token as `PUSHOVER_TOKEN` and user key as `PUSHOVER_USER` in github settings > secrets page.
+
+4. [Check this workflow as an example](https://github.com/Clivern/pushover-actions/blob/master/.github/workflows/pushover-actions.yml)
+
+```
+name: pushover-actions
+
+on:
+  issues:
+    types: [opened, edited]
+
+jobs:
+  pushover-actions:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2 # required to clone your code
+      - name: pushover-actions
+        uses: clivern/pushover-actions@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PUSHOVER_TOKEN: ${{ secrets.PUSHOVER_TOKEN }}
+          PUSHOVER_USER: ${{ secrets.PUSHOVER_USER }}
+```
 
 ## Versioning
 
