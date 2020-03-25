@@ -9,17 +9,19 @@ LABEL "repository"="https://github.com/Clivern/pushover-actions"
 LABEL "homepage"="http://github.com/clivern"
 LABEL "maintainer"="Clivern <hello@clivern.com>"
 
-ENV PUSHOVER_TOKEN=
-ENV PUSHOVER_USER=
+ARG PO_VERSION=0.0.2
+
+ENV GO111MODULE=on
+
+RUN mkdir -p /app
+
+RUN apt-get update
 
 WORKDIR /app
 
-COPY go.mod go.sum ./
+RUN curl -sL https://github.com/Clivern/pushover-actions/releases/download/${PO_VERSION}/pushover-actions_${PO_VERSION}_Linux_x86_64.tar.gz | tar xz
 
-RUN go mod download
-
-COPY . .
-
-RUN go build -o pushover-actions .
+RUN rm LICENSE
+RUN rm README.md
 
 ENTRYPOINT ["./pushover-actions"]
