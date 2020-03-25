@@ -1,0 +1,13 @@
+dist: xenial   # required for Python >= 3.7
+language: go
+
+services:
+  - docker
+
+go:
+  - 1.14.x
+
+# command to run tests
+script:
+  - docker build -t clivern/pushover-actions .
+  - docker images

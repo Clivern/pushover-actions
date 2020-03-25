@@ -1,0 +1,10 @@
+# action.yml
+name: 'krypton-actions'
+description: 'Open Source Workflow Automation'
+branding:
+  icon: 'package'
+  color: 'red'
+
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
