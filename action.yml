@@ -1,6 +1,6 @@
 # action.yml
 name: 'pushover-actions'
-description: 'Pushover A Notifications for Github Repository Changes'
+description: 'Push notifications for github repository changes through pushover'
 branding:
   icon: 'package'
   color: 'red'

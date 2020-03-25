@@ -1,18 +1,18 @@
 <p align="center">
     <img alt="Pushover Actions Logo" src="https://raw.githubusercontent.com/Clivern/pushover-actions/master/assets/images/logo.png" height="130" />
     <h3 align="center">Pushover Actions</h3>
-    <p align="center">Pushover A Notifications for Github Repository Changes</p>
+    <p align="center">Push notifications for github repository changes through pushover</p>
     <p align="center">
         <a href="https://travis-ci.com/Clivern/pushover-actions"><img src="https://travis-ci.com/Clivern/pushover-actions.svg?branch=master"></a>
-        <a href="https://github.com/Clivern/pushover-actions/releases"><img src="https://img.shields.io/badge/Version-0.0.3-red.svg"></a>
-        <a href="https://github.com/Clivern/pushover-actions/blob/master/LICENSE"><img src="https://img.shields.io/badge/LICENSE-Apache--2.0-orange.svg"></a>
+        <a href="https://github.com/Clivern/pushover-actions/releases"><img src="https://img.shields.io/badge/Version-0.0.4-red.svg"></a>
+        <a href="https://github.com/Clivern/pushover-actions/blob/master/LICENSE"><img src="https://img.shields.io/badge/LICENSE-MIT-orange.svg"></a>
     </p>
 </p>
 
 
 ## Documentation
 
-#### Pushover as a Github Action:
+#### Setup the Github Action:
 
 1. First create [pushover application](https://pushover.net/) and get a token and user key.
 
@@ -61,6 +61,7 @@ jobs:
           PUSHOVER_USER: ${{ secrets.PUSHOVER_USER }}
 ```
 
+
 ## Versioning
 
 For transparency into our release cycle and in striving to maintain backward compatibility, Pushover Actions is maintained under the [Semantic Versioning guidelines](https://semver.org/) and release process is predictable and business-friendly.
@@ -85,6 +86,6 @@ We are an open source, community-driven project so please feel free to join us. 
 
 ## License
 
-© 2020, Clivern. Released under [Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0).
+© 2020, clivern. Released under [MIT License](https://opensource.org/licenses/mit-license.php).
 
 **Pushover-Actions** is authored and maintained by [@Clivern](https://github.com/clivern).
