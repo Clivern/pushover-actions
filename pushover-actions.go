@@ -10,6 +10,7 @@ import (
 	"io/ioutil"
 	"os"
 
+	"github.com/clivern/pushover-actions/internal/app/handler"
 	"github.com/clivern/pushover-actions/internal/app/module"
 
 	log "github.com/sirupsen/logrus"
@@ -34,7 +35,10 @@ func main() {
 		))
 	}
 
-	fmt.Printf(string(eventsData) + "\n")
+	watchTower := module.WatchTower{}
+	watchTower.Add(handler.NewIssue{})
+	watchTower.Add(handler.EditIssue{})
+	watchTower.Notify(string(eventsData))
 
 	httpClient := module.NewHTTPClient()
 
