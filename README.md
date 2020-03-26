@@ -37,11 +37,11 @@ jobs:
           PUSHOVER_USER: ${{ secrets.PUSHOVER_USER }}
 ```
 
-3. Add pushover token as `PUSHOVER_TOKEN` and user key as `PUSHOVER_USER` in github settings > secrets page.
+3. Add pushover token as `PUSHOVER_TOKEN` and user key as `PUSHOVER_USER` in *github settings > secrets page*.
 
 4. [Check this workflow as an example](https://github.com/Clivern/pushover-actions/blob/master/.github/workflows/pushover-actions.yml)
 
-```
+```yml
 name: pushover-actions
 
 on:
@@ -86,6 +86,6 @@ We are an open source, community-driven project so please feel free to join us. 
 
 ## License
 
-© 2020, clivern. Released under [MIT License](https://opensource.org/licenses/mit-license.php).
+© 2020, Clivern. Released under [MIT License](https://opensource.org/licenses/mit-license.php).
 
 **Pushover-Actions** is authored and maintained by [@Clivern](https://github.com/clivern).
