@@ -9,7 +9,7 @@ LABEL "repository"="https://github.com/Clivern/pushover-actions"
 LABEL "homepage"="http://github.com/clivern"
 LABEL "maintainer"="Clivern <hello@clivern.com>"
 
-ARG PO_VERSION=0.0.5
+ARG PO_VERSION=0.0.6
 
 ENV GO111MODULE=on
 

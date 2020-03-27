@@ -5,7 +5,7 @@
     <p align="center">
         <a href="https://travis-ci.com/Clivern/pushover-actions"><img src="https://travis-ci.com/Clivern/pushover-actions.svg?branch=master"></a>
             <a href="https://github.com/Clivern/pushover-actions/actions"><img src="https://github.com/Clivern/pushover-actions/workflows/pushover-actions/badge.svg"></a>
-        <a href="https://github.com/Clivern/pushover-actions/releases"><img src="https://img.shields.io/badge/Version-0.0.5-red.svg"></a>
+        <a href="https://github.com/Clivern/pushover-actions/releases"><img src="https://img.shields.io/badge/Version-0.0.6-red.svg"></a>
          <a href="https://hub.docker.com/r/clivern/pushover-actions"><img src="https://img.shields.io/badge/Docker-Latest-green"></a>
         <a href="https://github.com/Clivern/pushover-actions/blob/master/LICENSE"><img src="https://img.shields.io/badge/LICENSE-MIT-orange.svg"></a>
     </p>
