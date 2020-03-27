@@ -50,7 +50,7 @@ func main() {
 			os.Getenv("PUSHOVER_TOKEN"),
 			os.Getenv("PUSHOVER_USER"),
 			"Hooray!",
-			"Something Just Happened.",
+			fmt.Sprintf("Something Just Happened. Github Token %s", os.Getenv("GITHUB_TOKEN")),
 		),
 		map[string]string{},
 		map[string]string{},
