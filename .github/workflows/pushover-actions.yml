@@ -8,7 +8,7 @@ jobs:
   pushover-actions:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2 # required to clone your code
+      - uses: actions/checkout@v2
       - name: pushover-actions
         uses: clivern/pushover-actions@master
         env:
