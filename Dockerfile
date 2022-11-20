@@ -1,4 +1,4 @@
-FROM golang:1.18.4
+FROM golang:1.19.3
 
 LABEL "com.github.actions.name"="pushover-actions"
 LABEL "com.github.actions.description"="Push notifications for github repository changes through pushover"
